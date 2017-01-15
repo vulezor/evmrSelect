@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>evmr_dropdown_demo</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="autocomplete_css.css" rel="stylesheet">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/main-controller.js"></script>
+    <script src="directives/select-autocomplete.js"></script>
+     <script src="autocomplete.js"></script>
+</head>
+<style>
+
+    
+
+</style>
+<body ng-controller="mainController">
+<div class="container">
+    {{country.id}}
+    <div class="col-md-6 col-md-offset-3" style="margin-top:20px">
+        <select ng-if="countries"
+            select-autocomplete 
+            class="form-control" 
+            ng-model="country.id",
+            delay="250" 
+            selected-value=" {value: country.id, text: country.name }"
+            api="{url:'test.php',id:'id','name':'name'}"
+            ng-options = "v.id as v.name for v in countries"
+       ></select>
+    </div>
+
+{{test_country.id}}
+    <div class="col-md-6 col-md-offset-3" style="margin-top:20px">
+        <select
+            select-autocomplete 
+            class="form-control" 
+            ng-model="test_country.id",
+            delay="250" 
+            selected-value=" {value: test_country.id, text: test_country.name }"
+            api="{url:'test.php',id:'id','name':'name'}"
+       ></select>
+    </div>
+  
+</div>
+
+<!-- ng-options = "v.id as v.name for v in countries"-->
+
+<script>
+
+ 
+</script>
+</body>
+</html>

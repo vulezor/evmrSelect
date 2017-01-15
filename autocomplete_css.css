@@ -1,0 +1,109 @@
+.evmrAutocomplete_load{
+    background-color:white;
+     position:absolute;
+     right:0%;
+     top:0%;
+     margin-top:6px;
+     margin-right:43px;
+     z-index:11;
+     height:23px;
+
+}
+
+.evmrAutocomplete{
+    position:relative;
+}
+
+span.clearBtn{
+    position: absolute;
+    right: 0;
+    padding: 4px 10px;
+    display: none;
+    cursor: pointer;
+    width:26px;
+    color: #999;
+    font-size: 20px;
+    line-height: normal;
+    z-index:10
+}
+
+.evmrAutocomplete_loader{
+    background:#fff;
+    color:#999;
+}
+
+.auto-complete-box{
+    position:absolute;
+    border:1px solid #ccc;
+    list-style:none;
+    margin-top:35px;
+    z-index: 9999;
+}
+.auto-complete-box>ul{
+    margin:0px;
+    padding:0px;
+    position:relative;
+}
+.auto-complete-box>ul>li{
+    list-style:none;
+    padding:3px 10px;
+    display:block;
+    cursor:pointer;
+    font-size:12px
+}
+.auto-complete-active{
+    background-color:#2F6F9F;
+    color:#fff;
+}
+.color-box-container{
+    width:100%;
+    min-height:34px
+}
+.fake-input{
+    min-height:34px;
+    border:1px solid #ccc;
+    padding-bottom:3px
+}
+.div-for-input{
+    border:1px solid #000;
+    font-family:arial;
+    display:none
+}
+.selected_color{
+    background-color:#3c8dbc;
+    border-color:#367fa9;
+    padding:1px 5px;
+    color:#fff;
+    border-radius:4px;
+    float:left;
+    margin-top:3px;
+    margin-left:3px;
+    height:26px;
+    line-height:1.75
+}
+.remove_selected_color{
+    color:#999;
+    cursor:pointer;
+    font-weight:700
+}
+.no-data-msg{
+    padding:5px;
+    font-weight:700
+}
+.auto-color-picker{
+        border:1px solid #ccc;
+        position:absolute;
+      }
+  .auto-color-picker ul {
+    margin:0px;
+    padding:0px
+  }
+  .auto-color-picker li {
+    list-style: none;
+    padding:2px 5px
+  }
+
+/* Color picker */
+.colorpicker-2x .colorpicker-saturation {width: 200px;height: 200px;}
+.colorpicker-2x .colorpicker-hue, .colorpicker-2x .colorpicker-alpha {width: 30px; height: 200px;}
+.colorpicker-2x .colorpicker-color, .colorpicker-2x .colorpicker-color div {height: 30px;}

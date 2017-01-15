@@ -1,0 +1,17 @@
+{
+  "name": "evmr_dropdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "evmr_dropdown.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zoran Vulanovic",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.0.0"
+  }
+}
